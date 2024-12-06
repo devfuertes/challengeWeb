@@ -1,77 +1,48 @@
-/* 1. Use a more-intuitive box-sizing model */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+:root {
+
+    --grey-body-background: #F8F9FF;
+    --grey-medium: #D8D8D8;
+    --black-principal: #2D2D2D;
+    --cta-green: #009379;
+    --cta-green-aqua: #E5F4F2;
+    --secondary-sweet-corn: #F8D57E;
+    --secondary-mandys-pink: #F2BFAF;
+    --secondary-persimmon: #FF6250;
+
+    --scala: 1.54;
+
+    --base: 1rem;
+
+    --size-title-2xl: calc(var(--size-title-xl) * var(--scala));
+    --size-title-xl: calc(var(--size-title-l) * var(--scala));
+    --size-title-l: calc(var(--size-title-m) * var(--scala));
+    --size-title-m: calc(var(--size-title-normal) * var(--scala));
+    --size-title-normal: var(--base);
+    --size-title-s: calc(var(--size-title-normal) / var(--scala));
+    --size-title-xs: calc(var(--size-title-s) / var(--scala));
+
+
+    --scalaBody: 1.333;
+
+    --size-body-xl: calc(var(--size-body-l) * var(--scalaBody));
+    --size-body-l: calc(var(--size-body-normal) * var(--scalaBody));
+    --size-body-normal: var(--base);
+    --size-body-s: 0.875rem;
+
+
+
 }
 
-/* 2. Remove default margin */
-* {
-    margin: 0;
-    padding: 0;
+
+
+
+
+
+main,
+section,
+nav,
+div,
+footer {
+    border: 1px solid #2D2D2D;
+    padding: 2rem;
 }
-
-body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
-}
-
-/* 5. Improve media defaults */
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-/* 6. Inherit fonts for form controls */
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-/* 7. Avoid text overflows */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
-}
-
-/* 8. Improve line wrapping */
-p {
-    text-wrap: pretty;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-wrap: balance;
-}
-
-/*
-  9. Create a root stacking context
-*/
-#root,
-#__next {
-    isolation: isolate;
-}
-
-/*  ----------------------------------------------------------------------------------------
-                                    FINISH RESET
-    ----------------------------------------------------------------------------------------
-*/
-
-
