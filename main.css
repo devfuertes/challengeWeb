@@ -241,7 +241,7 @@ section.features {
         display: flex;
         flex-direction: column;
         gap: 3rem;
-        
+
 
 
         .card.testimonials {
@@ -300,30 +300,3 @@ section.features {
 
 }
 
-
-
-
-
-
-
-
-
-
-/* ================================================
-                    QUITAR
-    ================================================
-*/
-
-/* main,
-section,
-nav,
-div,
-footer {
-    border: 1px solid #2D2D2D;
-
-} */
-
-/* ================================================
-                        QUITAR
-        ================================================
-    */
