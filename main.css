@@ -38,10 +38,6 @@ body {
     background-color: var(--grey-body-background);
 }
 
-main {
-    padding-block: 1.5rem;
-    padding-inline: 1.6rem;
-}
 
 header nav {
 
@@ -61,7 +57,7 @@ header nav {
 }
 
 
-section.hero {
+.section.hero {
 
     padding-block: 1.5rem;
     padding-inline: 1.6rem;
@@ -80,7 +76,7 @@ section.hero {
         text-align: center;
     }
 
-    div button {
+    .hero.button {
 
 
         display: flex;
@@ -98,7 +94,7 @@ section.hero {
 }
 
 
-section.features {
+.section.features {
     padding-block: 1.5rem;
     padding-inline: 1.6rem;
 
@@ -219,6 +215,7 @@ section.features {
     padding-block: 1.5rem;
     padding-inline: 1.6rem;
 
+
     h2 {
 
         text-align: center;
@@ -236,67 +233,117 @@ section.features {
 
     }
 
-    .container.card.testimonials{
+    .container.card.testimonials {
 
         display: flex;
         flex-direction: column;
         gap: 3rem;
+        margin-bottom: 5rem;
 
 
 
         .card.testimonials {
 
-        border-radius: 20px;
-        padding: 2.8rem;
-        background-color: white;
-        
+            border-radius: 20px;
+            padding: 2.8rem;
+            background-color: white;
 
-        h3 {
-            text-align: center;
-            font-family: "Poppins", sans-serif;
-            font-weight: 600;
-            font-size: 21px;
+
+            h3 {
+                text-align: center;
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-size: 21px;
+            }
+
+            h3+p {
+
+                text-align: center;
+                padding-bottom: 2rem;
+            }
+
+            p+p {
+                text-align: center;
+            }
+
+
+            .image.user {
+                display: block;
+                border-radius: 50%;
+                width: 50%;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+            }
+
+            .container.testimonials.star {
+                display: flex;
+                justify-content: center;
+                margin-top: 2rem;
+            }
+
+
+
+
         }
-
-        h3+p {
-
-            text-align: center;
-            padding-bottom: 2rem;
-        }
-
-        p+p {
-            text-align: center;
-        }
-
-
-        .image.user {
-            display: block;
-            border-radius: 50%;
-            width: 50%;
-            margin: 0 auto;
-            margin-bottom: 1rem;
-        }
-
-        .container.testimonials.star{
-            display: flex;
-            justify-content: center;
-            margin-top: 2rem;
-            
-            
-
-            
-
-
-
-
     }
-
-
 
 
 }
-    }
+
+
+
+.section.pricing {
+
     
+    padding-block: 1.5rem;
+    padding-inline: 1.6rem;
+
+
+
+
+    h2 {
+
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: var(--size-title-l);
+        margin-top: 5rem;
+    }
+
+    h2+p {
+        text-align: center;
+        font-family: "Mulish", sans-serif;
+        font-size: var(--size-body-m);
+        margin-bottom: 2rem;
+    }
+
+    .pricing.card {
+
+        background-color: white;
+        border-radius: 20px;
+
+        ul{
+            list-style: none;
+
+            
+        }
+
+
+        .pricing.button {
+
+            display: flex;
+            gap: 0.5rem;
+            margin: 1rem auto 2rem;
+            border: 0;
+            border-radius: 20px;
+            padding: 1.2rem 4rem;
+            background-color: var(--cta-green-aqua);
+            color: var(--cta-green);
+            font-family: "Poppins", sans-serif;
+            font-size: var(--base);
+            font-weight: 600;
+        }
+    }
+
 
 }
-
